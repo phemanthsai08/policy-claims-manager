@@ -67,7 +67,7 @@ export function DashboardCharts() {
                   className="inline-block size-2.5 rounded-full"
                   style={{ background: STATUS_COLORS[i] }}
                 />
-                <span className="text-muted-foreground">{item.name}</span>
+                <span className={"text-muted-foreground"}>{item.name}</span>
               </div>
             ))}
           </div>
