@@ -26,7 +26,6 @@ function StatIcon({ title }: { title: string }) {
 export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
       <header className="border-b bg-card/50 backdrop-blur sticky top-0 z-40">
         <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
           <div className="flex items-center gap-2">
@@ -44,7 +43,6 @@ export default function DashboardPage() {
       </header>
 
       <main className="mx-auto max-w-7xl space-y-6 p-4 sm:p-6">
-        {/* Page title */}
         <div>
           <h1 className="text-2xl font-bold tracking-tight">Claims Overview</h1>
           <p className="text-muted-foreground text-sm mt-0.5">
@@ -52,7 +50,6 @@ export default function DashboardPage() {
           </p>
         </div>
 
-        {/* Stats grid */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
             <Card key={stat.title}>
@@ -89,10 +86,7 @@ export default function DashboardPage() {
           ))}
         </div>
 
-        {/* Charts */}
         <DashboardCharts />
-
-        {/* Claims table */}
         <ClaimsTable />
       </main>
     </div>
