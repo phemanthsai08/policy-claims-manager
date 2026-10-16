@@ -38,11 +38,11 @@ export function QADebugPanel() {
           <CardContent className="space-y-3 text-sm">
             <div className="flex justify-between">
               <span className="text-muted-foreground">UI Status</span>
-              <span className="font-medium text-emerald-600">{renderStatus}</span>
+              <span className={"font-medium text-emerald-600"}>{renderStatus}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-muted-foreground">Mount Time</span>
-              <span className="font-mono text-xs">{mountTime}</span>
+              <span className={"font-mono text-xs"}>{mountTime}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-muted-foreground">Env</span>
