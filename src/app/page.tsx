@@ -60,7 +60,7 @@ export default function DashboardPage() {
                 <StatIcon title={stat.title} />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">{stat.value}</div>
+                <div className={"text-2xl font-bold"}>{stat.value}</div>
                 <div className="flex items-center gap-1 mt-1 text-xs">
                   {stat.trend === "up" ? (
                     <TrendingUp className="size-3 text-rose-500" />
@@ -79,7 +79,7 @@ export default function DashboardPage() {
                   >
                     {stat.change}
                   </span>
-                  <span className="text-muted-foreground">{stat.description}</span>
+                  <span className={"text-muted-foreground"}>{stat.description}</span>
                 </div>
               </CardContent>
             </Card>
