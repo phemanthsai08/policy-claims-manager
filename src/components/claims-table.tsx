@@ -42,14 +42,14 @@ export function ClaimsTable() {
                 key={claim.id}
                 className="border-b last:border-0 hover:bg-muted/40 transition-colors"
               >
-                <td className="py-3 pr-4 font-mono text-xs">{claim.id}</td>
+                <td className={"py-3 pr-4 font-mono text-xs"}>{claim.id}</td>
                 <td className="py-3 pr-4">
-                  <div className="font-medium">{claim.claimant}</div>
+                  <div className={"font-medium"}>{claim.claimant}</div>
                   <div className="text-xs text-muted-foreground">
                     {claim.policyNumber}
                   </div>
                 </td>
-                <td className="py-3 pr-4">{claim.type}</td>
+                <td className={"py-3 pr-4"}>{claim.type}</td>
                 <td className="py-3 pr-4 font-medium">
                   {formatCurrency(claim.amount)}
                 </td>
@@ -84,7 +84,7 @@ export function ClaimsTable() {
                       : `${claim.slaDaysLeft}d left`}
                   </span>
                 </td>
-                <td className="py-3 text-muted-foreground">{claim.assignee}</td>
+                <td className={"py-3 text-muted-foreground"}>{claim.assignee}</td>
               </tr>
             ))}
           </tbody>
